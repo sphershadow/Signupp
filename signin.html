@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="header-container">
+                <div class="logo"></div>
+                <div class="signup">
+                    <a href="index.html">Sign Up</a>
+                </div>
+            </div>
+            <h1>Sign In</h1>
+            <p class="welcome">Welcome, Parser!</p>
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Enter Username or ID" name="username" required >
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <!-- <button type="submit" class="btn">Sign In</button> -->
+                <button class="next-icon-button">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <!-- forgot password upward transition towards searh acc. page / screen slides to top -->
+                <a href="search.html" class="forgot-password">Forgot Password <i class="fa-solid fa-arrow-right"></i></a>
+           
+            </form>
+           
+            <div class="footer-image"></div>
+        </div>
+    </div>
+</body>
+</html>

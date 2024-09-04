@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-box {
+    /* margin: 20px 20px; */
+    /* min-height: 740 svh; */
+    min-height: 450px;
+    width: 300px;
+    padding: 40px;
+    position: relative;
+    background: #fff;
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+header .h1 {
+    margin: 0;
+    font-size: 18px;
+    color: whitesmoke;
+    /* color: #f0ebeb; */
+    /* background: linear-gradient(to right, #ffffff 0%, #ffffff 15%, #90e3e9 50%, #ffffff 85%, #ffffff 100%); */
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 5%, #90e3e9 50%, #ffffff 95%, #ffffff 100%);
+    /* background-color: #90e3e9; */
+    text-align: center;
+    padding: 5px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/logo-icon.png'); 
+    background-size: cover;
+    margin-right: 10px; 
+}
+
+.signup {
+    margin: 0; 
+    text-align: right;
+}
+
+.signup a {
+    display: inline-block;
+    background-color: #3498db;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 12px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.signup a:hover {
+    background-color: #2980b9;
+}
+
+h1 {
+    margin: 0 0 10px;
+    padding: 0;
+    padding-top: 20px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p .welcome {
+    color: rgb(23, 23, 23);
+    font-weight: 500;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    /* vertical-align: middle; */
+    background: #ffffff;
+    border: 1px solid rgba(188, 186, 186, 0.383); 
+    outline: none;
+    color: #333;
+    font-size: 14px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#search-icon {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom: 6px; 
+    text-shadow: 0.5px 0 black, 0 0.5px black;
+}
+
+/* .circle-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background-color: #454343; 
+    margin: 20px auto; 
+}
+
+.circle-user i {
+    font-size: 72px; 
+    color: #ffffff;
+} */
+.user-profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    margin: 0 auto; 
+}
+
+.user-profile-icon img {
+    width: 62px;  
+    height: 62px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.username-confirm {
+        margin: 0 auto; /* Center the paragraph element */
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: fit-content; /* Adjusts width based on content, optional */
+}
+
+.code-confirm {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.textbox i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(156, 153, 153);  
+}
+
+ .next-icon-button {
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    background: #EB3434;
+    transform-style: preserve-3d;
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    box-shadow: 0 0.5em 0 #B02828;
+
+}
+
+.next-icon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    transform: translateY(0.3em);
+    z-index: -1;
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.next-icon-button:active {
+    transform: translateY(0.3em);
+    box-shadow: 0 0.15em 0 #720808;
+}
+
+.next-icon-button:active::before {
+    transform: translateY(0);
+}
+
+.next-icon-button:hover {
+    background: #bd2222dd;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px; /* Adjust margin to position it properly */
+    font-size: 12px;
+    color: #1c2d37;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1; /* Ensure it appears above other content */
+    position: relative; /* Position relative to avoid being hidden */
+}
+
+.forgot-password:hover {
+    color: rgb(41, 41, 42);
+}
+
+.footer-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px; 
+    background: url('images/ctu-argao-photo-banner.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+}
